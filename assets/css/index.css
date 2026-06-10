@@ -1,0 +1,249 @@
+@font-face {
+    font-family: 'Gumball';
+    src: url('../fonts/gumball.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ======== BLINGO ======== */
+.blingo-wrap {
+    position: relative;
+    display: inline-block;
+    line-height: 0;
+}
+
+.blingo-base {
+    display: block;
+    height: 180px;
+    width: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.blingo-scan {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: overlay;
+    opacity: 0.4;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Texto sobreposto na tela do console */
+.blingo-screen-overlay {
+    position: absolute;
+    /* Posição da "tela" do blingo.png — ajuste top/left/width/height conforme o PNG */
+    top: 18%;
+    left: 22%;
+    width: 56%;
+    height: 36%;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.blingo-screen-text {
+    font-family: 'Crafty', monospace;
+    font-size: 0.55rem;
+    color: #00ff88;
+    text-align: center;
+    line-height: 1.8;
+    text-shadow: 0 0 6px #00ff88;
+    letter-spacing: 1px;
+}
+
+/* Botão saiba mais */
+.blingo-saibamais-btn {
+    display: block;
+    margin: 10px auto 0;
+    font-family: 'Crafty', monospace;
+    font-size: 0.6rem;
+    background: var(--yellow);
+    color: var(--black);
+    border: 2px solid var(--black);
+    border-radius: 6px;
+    padding: 8px 16px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 var(--black);
+    transition: all 0.1s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
+}
+
+.blingo-saibamais-btn:hover {
+    transform: translate(-2px,-2px);
+    box-shadow: 5px 5px 0 var(--black);
+}
+
+/* ======== BLINGO INFO WIDGET ======== */
+#blingo-info-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+#blingo-info-widget {
+    background: var(--black);
+    border: 3px solid var(--yellow);
+    border-radius: 20px;
+    box-shadow: 8px 8px 0 var(--yellow);
+    width: 100%;
+    max-width: 680px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    position: relative;
+    min-height: 320px;
+}
+
+.blingo-info-close {
+    position: absolute;
+    top: 12px; right: 16px;
+    background: none;
+    border: none;
+    color: var(--yellow);
+    font-size: 1.1rem;
+    cursor: pointer;
+    z-index: 10;
+    line-height: 1;
+}
+
+/* ESQUERDA — slideshow */
+.blingo-info-left {
+    background: #111;
+    border-right: 3px solid var(--yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 24px;
+    position: relative;
+}
+
+.blingo-slideshow {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.blingo-slide {
+    display: none;
+    max-height: 200px;
+    max-width: 100%;
+    object-fit: contain;
+    animation: fadeSlide 0.4s ease;
+}
+
+.blingo-slide.active { display: block; }
+
+@keyframes fadeSlide {
+    from { opacity: 0; transform: translateX(10px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+.blingo-slide-dots {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 16px;
+}
+
+.blingo-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: #444;
+    border: 1px solid #666;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.blingo-dot.active { background: var(--yellow); border-color: var(--yellow); }
+
+/* DIREITA — info */
+.blingo-info-right {
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.blingo-info-title {
+    font-family: 'Gumball', monospace;
+    font-size: 1.6rem;
+    color: var(--yellow);
+    margin-bottom: 12px;
+}
+
+.blingo-info-desc {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: #ccc;
+    margin-bottom: 16px;
+}
+
+.blingo-info-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.blingo-info-features li {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #aaa;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.blingo-info-features li i { color: var(--yellow); width: 16px; }
+
+.blingo-play-btn {
+    font-family: 'Crafty', monospace;
+    font-size: 0.75rem;
+    background: #333;
+    color: #666;
+    border: 2px solid #444;
+    border-radius: 8px;
+    padding: 14px;
+    cursor: not-allowed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+
+.blingo-wip-badge {
+    background: var(--yellow);
+    color: var(--black);
+    font-size: 0.5rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 900;
+}
+
+@media (max-width: 600px) {
+    #blingo-info-widget {
+        grid-template-columns: 1fr;
+    }
+    .blingo-info-left {
+        border-right: none;
+        border-bottom: 3px solid var(--yellow);
+        padding: 20px;
+    }
+    .blingo-slide { max-height: 120px; }
+}

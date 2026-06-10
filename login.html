@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar | Clubingue</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+
+<div class="login-wrap">
+
+    <div class="login-side">
+        <img src="assets/images/logos/clubingue.png" alt="Clubingue - Logotipo Oficial" class="logo">
+        <p class="login-side-text">
+            Seu lugar pra aprender <strong>sem perder a sanidade</strong>.<br>
+            Entre e continue de onde parou.
+        </p>
+    </div>
+
+    <div id="login-form-wrap" class="login-form-wrap">
+        
+        <div class="auth-tabs">
+            <button id="tab-login" class="auth-tab active" data-tab="login">Login</button>
+            <button id="tab-register" class="auth-tab" data-tab="register">Criar Conta</button>
+        </div>
+
+        <div id="login-panel" class="auth-panel active">
+            <div>
+                <h1 class="login-title">Bem-vindo!</h1>
+                <p class="login-sub">Entre na sua conta pra continuar</p>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label"><i class="fa-solid fa-envelope"></i> EMAIL</label>
+                <input id="login-email" class="form-input" type="email" placeholder="seuemail@exemplo.com">
+            </div>
+
+            <div class="form-group">
+                <label class="fa-solid fa-lock form-label"> SENHA</label>
+                <input id="login-senha" class="form-input" type="password" placeholder="••••••••">
+            </div>
+
+            <div id="login-error" class="error-msg"></div>
+
+            <button class="btn-login" onclick="fazerLogin()">
+                <i class="fa-solid fa-right-to-bracket"></i> ENTRAR
+            </button>
+        </div>
+
+        <div id="register-panel" class="auth-panel">
+            <div>
+                <h1 class="login-title">Crie sua Conta</h1>
+                <p class="login-sub">Inscreva-se gratuitamente para salvar seu progresso</p>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label"><i class="fa-solid fa-user"></i> NOME COMPLETO</label>
+                <input id="reg-name" class="form-input" type="text" placeholder="Seu Nome">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label"><i class="fa-solid fa-envelope"></i> EMAIL</label>
+                <input id="reg-email" class="form-input" type="email" placeholder="seuemail@exemplo.com">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label"><i class="fa-solid fa-lock"></i> SENHA</label>
+                <input id="reg-senha" class="form-input" type="password" placeholder="Escolha uma senha forte">
+            </div>
+
+            <div id="reg-error" class="error-msg"></div>
+
+            <button class="btn-login" onclick="fazerRegistro()">
+                <i class="fa-solid fa-user-plus"></i> CADASTRAR
+            </button>
+        </div>
+
+        <div class="login-divider">ou</div>
+
+        <a href="index.html" class="btn-guest">
+            <i class="fa-solid fa-user-secret"></i> CONTINUAR SEM CONTA
+        </a>
+        
+        <p class="login-footer-text">
+            Não tem conta? <a href="#" onclick="event.preventDefault(); document.getElementById('tab-register').click();">Crie uma grátis</a>
+        </p>
+    </div>
+
+</div>
+
+    <script src="assets/js/login.js"></script>
+</body>
+</html>

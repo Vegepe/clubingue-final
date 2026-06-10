@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matéria | Clubingue</title>
+    <link rel="stylesheet" href="../assets/css/subject-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="mobile-header">
+    <a class="mobile-logo" href="../index.html"><img src="../assets/images/logos/clubingue.png" alt="Clubingue" style="height:28px;"></a>
+    <button class="mobile-menu-btn" onclick="document.querySelector('.sidebar').classList.toggle('open')">
+        <i class="fa-solid fa-bars"></i> MENU
+    </button>
+</div>
+
+<nav class="sidebar">
+    <a class="sidebar-logo" href="../index.html"><img src="../assets/images/logos/clubingue.png" alt="CLUBINGUE"></a>
+
+    <div class="sidebar-section">navegação</div>
+    <a class="nav-item" href="../index.html"><i class="fa-solid fa-house"></i> Início</a>
+
+    <div class="sidebar-section">matérias</div>
+    <a class="nav-item" id="nav-historia" href="materia.html?m=historia"><i class="fa-solid fa-landmark"></i> História</a>
+    <a class="nav-item" id="nav-literatura" href="materia.html?m=literatura"><i class="fa-solid fa-feather-pointed"></i> Literatura</a>
+    <a class="nav-item" id="nav-portugues" href="materia.html?m=portugues"><i class="fa-solid fa-book-open"></i> Português</a>
+    <a class="nav-item" href="#"><i class="fa-solid fa-bolt"></i> Física</a>
+
+    <div class="sidebar-footer" id="sidebar-user-panel">
+        <div class="user-badge">
+            <div class="user-avatar" id="user-avatar">--</div>
+            <div class="user-info">
+                <div class="user-name" id="user-name">Carregando...</div>
+                <div class="user-level" id="user-level">Nível 1 ⭐</div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="main-content">
+
+    <div class="article-badges" id="badges">
+        <span class="badge badge-subject" id="badge-subject"></span>
+        <span class="badge badge-time"><i class="fa-regular fa-clock"></i> <span id="badge-topicos"></span> tópicos</span>
+    </div>
+
+    <div class="hub-header">
+        <h1 class="article-title" id="hub-title"></h1>
+        <p class="hub-intro" id="hub-intro"></p>
+    </div>
+
+    <div class="hub-search-wrap">
+        <input class="hub-search" type="text" id="search-input" placeholder="Buscar tópico...">
+        <i class="fa-solid fa-magnifying-glass hub-search-icon"></i>
+    </div>
+
+    <div class="topics-grid" id="topics-grid"></div>
+    <div class="no-results" id="no-results" style="display: none;">
+        <div class="no-results-emoji">🦆</div>
+        <p>Nenhum tópico encontrado.<br>Tenta outra palavra-chave!</p>
+    </div>
+
+</main>
+
+<script src="../assets/js/loader.js"></script>
+
+</body>
+</html>

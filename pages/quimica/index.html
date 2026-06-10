@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Química | Clubingue</title>
+    <link rel="stylesheet" href="../../assets/css/subject-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="mobile-header">
+    <a class="mobile-logo" href="../../index.html"><img src="../../assets/images/logos/clubingue.png" alt="Clubingue" style="height:28px;"></a>
+    <button class="mobile-menu-btn" onclick="document.querySelector('.sidebar').classList.toggle('open')">
+        <i class="fa-solid fa-bars"></i> MENU
+    </button>
+</div>
+
+<nav class="sidebar">
+    <a class="sidebar-logo" href="../../index.html"><img src="../../assets/images/logos/clubingue.png" alt="Clubingue" style="height:32px;"></a>
+
+    <div class="sidebar-section">navegação</div>
+    <a class="nav-item" href="../../index.html"><i class="fa-solid fa-house"></i> Início</a>
+
+    <div class="sidebar-section">matérias</div>
+    <a class="nav-item" href="../historia/index.html"><i class="fa-solid fa-landmark"></i> História</a>
+    <a class="nav-item" href="../literatura/index.html"><i class="fa-solid fa-feather-pointed"></i> Literatura</a>
+    <a class="nav-item" href="../portugues/index.html"><i class="fa-solid fa-book-open"></i> Português</a>
+    <a class="nav-item" href="../fisica/index.html"><i class="fa-solid fa-bolt"></i> Física</a>
+    <a class="nav-item active"><i class="fa-solid fa-atom"></i> Química</a>
+    <div class="nav-sub">
+        <a href="funcoes-organicas.html"><i class="fa-regular fa-circle"></i> Funções Orgânicas</a>
+    </div>
+    <a class="nav-item" href="../sociologia/index.html"><i class="fa-solid fa-people-group"></i> Sociologia</a>
+    <div class="nav-sub">
+        <a href="funcoes-organicas.html"><i class="fa-regular fa-circle"></i> Funções Orgânicas</a>
+    </div>
+
+    <div class="sidebar-footer">
+        <div class="user-badge" id="sidebar-user-badge">
+            <a class="sidebar-login-btn" href="../../login.html"><i class="fa-solid fa-right-to-bracket"></i> Entrar</a>
+        </div>
+    </div>
+</nav>
+
+<main class="main-content">
+    <div class="article-badges">
+        <span class="badge badge-subject"><i class="fa-solid fa-atom"></i> Química</span>
+        <span class="badge badge-time"><i class="fa-regular fa-clock"></i> 1 tópico</span>
+    </div>
+
+    <h1 class="article-title">Química</h1>
+    <p class="hub-intro">Da composição da matéria às reações que transformam o mundo — entenda a ciência que está em tudo ao seu redor.</p>
+
+    <div class="topics-grid" style="margin-top:32px;">
+        <a href="funcoes-organicas.html" class="topic-card">
+            <div class="topic-number">1</div>
+            <div class="topic-info">
+                <div class="topic-title">Funções Orgânicas</div>
+                <div class="topic-meta">
+                    <span><i class="fa-regular fa-clock"></i> 15 min</span>
+                    <span style="background:#fff3b0;padding:2px 8px;border-radius:4px;border:1px solid #ccc;">Médio</span>
+                </div>
+            </div>
+            <i class="fa-solid fa-chevron-right topic-arrow"></i>
+        </a>
+    </div>
+</main>
+
+    <script src="../../assets/js/loader.js"></script>
+</body>
+</html>

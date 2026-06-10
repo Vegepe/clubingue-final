@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História | Clubingue</title>
+    <link rel="stylesheet" href="../../assets/css/subject-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="mobile-header">
+    <a class="mobile-logo" href="../../index.html"><img src="../../assets/images/logos/clubingue.png" alt="Clubingue" style="height:28px;"></a>
+    <button class="mobile-menu-btn" onclick="document.querySelector('.sidebar').classList.toggle('open')">
+        <i class="fa-solid fa-bars"></i> MENU
+    </button>
+</div>
+
+<nav class="sidebar">
+    <a class="sidebar-logo" href="../../index.html"><img src="../../assets/images/logos/clubingue.png" alt="Clubingue" style="height:32px;"></a>
+
+    <div class="sidebar-section">navegação</div>
+    <a class="nav-item" href="../../index.html"><i class="fa-solid fa-house"></i> Início</a>
+
+    <div class="sidebar-section">matérias</div>
+    <a class="nav-item active"><i class="fa-solid fa-landmark"></i> História</a>
+    <div class="nav-sub">
+        <a href="1wgm.html"><i class="fa-regular fa-circle"></i> 1ª Guerra Mundial</a>
+        <a href="#"><i class="fa-regular fa-circle"></i> Ditadura Militar</a>
+        <a href="#"><i class="fa-regular fa-circle"></i> Guerra Fria</a>
+    </div>
+    <a class="nav-item" href="../literatura/index.html"><i class="fa-solid fa-feather-pointed"></i> Literatura</a>
+    <a class="nav-item" href="../portugues/index.html"><i class="fa-solid fa-book-open"></i> Português</a>
+    <a class="nav-item" href="../fisica/index.html"><i class="fa-solid fa-bolt"></i> Física</a>
+    <a class="nav-item" href="../quimica/index.html"><i class="fa-solid fa-atom"></i> Química</a>
+    <a class="nav-item" href="../sociologia/index.html"><i class="fa-solid fa-people-group"></i> Sociologia</a>
+
+    <div class="sidebar-footer">
+        <div class="user-badge" id="sidebar-user-badge">
+            <a class="sidebar-login-btn" href="../../login.html"><i class="fa-solid fa-right-to-bracket"></i> Entrar</a>
+        </div>
+    </div>
+</nav>
+
+<main class="main-content">
+    <div class="article-badges">
+        <span class="badge badge-subject"><i class="fa-solid fa-landmark"></i> História</span>
+        <span class="badge badge-time"><i class="fa-regular fa-clock"></i> 1 tópico</span>
+    </div>
+
+    <h1 class="article-title">História</h1>
+    <p class="hub-intro">Do início das civilizações ao mundo contemporâneo — entenda os eventos que moldaram a humanidade.</p>
+
+    <div class="topics-grid" style="margin-top:32px;">
+        <a href="1wgm.html" class="topic-card">
+            <div class="topic-number">1</div>
+            <div class="topic-info">
+                <div class="topic-title">1ª Guerra Mundial</div>
+                <div class="topic-meta">
+                    <span><i class="fa-regular fa-clock"></i> 15 min</span>
+                    <span style="background:#fff3b0;padding:2px 8px;border-radius:4px;border:1px solid #ccc;">Médio</span>
+                </div>
+            </div>
+            <i class="fa-solid fa-chevron-right topic-arrow"></i>
+        </a>
+        <a href="#" class="topic-card locked">
+            <div class="topic-number" style="background:#ddd;">2</div>
+            <div class="topic-info">
+                <div class="topic-title">Ditadura Militar <i class="fa-solid fa-lock" style="font-size:0.6rem;color:#bbb"></i></div>
+                <div class="topic-meta"><span style="color:#bbb"><i class="fa-solid fa-lock"></i> Em breve</span></div>
+            </div>
+            <i class="fa-solid fa-chevron-right topic-arrow"></i>
+        </a>
+        <a href="#" class="topic-card locked">
+            <div class="topic-number" style="background:#ddd;">3</div>
+            <div class="topic-info">
+                <div class="topic-title">Guerra Fria <i class="fa-solid fa-lock" style="font-size:0.6rem;color:#bbb"></i></div>
+                <div class="topic-meta"><span style="color:#bbb"><i class="fa-solid fa-lock"></i> Em breve</span></div>
+            </div>
+            <i class="fa-solid fa-chevron-right topic-arrow"></i>
+        </a>
+    </div>
+</main>
+
+    <script src="../../assets/js/loader.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+.cemoji {
+    display: inline-block;
+    height: 1.2em;
+    width: auto;
+    max-height: 1.2em;
+    max-width: 2em;
+    vertical-align: -0.2em;
+    object-fit: contain;
+    margin: 0 0.1em;
+}
+
+h1 .cemoji, h2 .cemoji {
+    height: 1em;
+    max-height: 1em;
+    vertical-align: -0.1em;
+}
+
+.highlight-card .cemoji { filter: brightness(1.1); }

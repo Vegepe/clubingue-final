@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte | Clubingue</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/support.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/emojis.css">
+</head>
+<body>
+
+    <header>
+        <div class="mobile-nav-header">
+            <a class="logo" href="index.html"><img src="assets/images/logos/clubingue.png" alt="Clubingue"></a>
+        </div>
+                <nav>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Início</a></li>
+                <li><a href="index.html#materias"><i class="fa-solid fa-bookmark"></i> Matérias</a></li>
+                <li><a href="exercicios.html"><i class="fa-solid fa-pencil"></i> Exercícios</a></li>
+                <li><a href="sobre.html"><i class="fa-solid fa-circle-info"></i> Sobre</a></li>
+                <li><a href="suporte.html" class="nav-active"><i class="fa-solid fa-headset"></i> Suporte</a></li>
+                <li><a href="login.html" class="nav-login-btn" id="nav-auth-btn"><i class="fa-solid fa-right-to-bracket"></i> Entrar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="suporte-wrap">
+
+        <h1 class="suporte-title">Central de Suporte <span>🦆</span></h1>
+        <p class="suporte-lead">Tá com dúvida? O Pato Sávio organizou as respostas abaixo para te salvar :gag:.</p>
+
+        <!-- FAQ  -->
+        <section class="faq-section">
+            <h2 class="section-badge-title pixel"><i class="fa-solid fa-circle-question"></i> PERGUNTAS FREQUENTES</h2>
+            <div class="faq-list">
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="faq-text">O Clubingue é <span class="shaky">de graça</span> mesmo?</span>
+                        <i class="fa-solid fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! Todo o conteúdo disponível é gratuito. Sem assinatura, sem paywall, sem pegadinhas nem cobranças ocultas.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="faq-text">Preciso criar conta pra acessar o conteúdo?</span>
+                        <i class="fa-solid fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Não! Você pode navegar e ler os artigos livremente. Mas criar uma conta permite acumular XP e salvar seu progresso nas matérias.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="faq-text">Quando saem novos conteúdos?</span>
+                        <i class="fa-solid fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>A plataforma está em desenvolvimento contínuo. Novos tópicos entram no ar com frequência — os blocos bloqueados no menu indicam o que está vindo a seguir.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="faq-text">O que é o BlingoBoy 3000?</span>
+                        <i class="fa-solid fa-chevron-down arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>É o nosso portátil para estudos. Vem com questionários rápidos para serem respondidos na página e mini-jogos em pixel art para você arejar a mente entre os blocos de estudos sem perder o foco.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CANAIS DE CONTATO -->
+        <section class="faq-section">
+            <h2 class="section-badge-title pixel"><i class="fa-solid fa-tower-broadcast"></i> CANAIS DE CONTATO</h2>
+            <div class="contact-grid">
+                <a class="contact-card" href="mailto:oi@clubingue.com">
+                    <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="contact-card-title">E-mail</div>
+                    <div class="contact-card-desc">ClubingueSuporte@gmail.com<br>Retorno em até 48 horas úteis.</div>
+                </a>
+                <a class="contact-card" href="#">
+                    <div class="contact-card-icon"><i class="fa-brands fa-discord"></i></div>
+                    <div class="contact-card-title">Discord</div>
+                    <div class="contact-card-desc">Entre na comunidade para tirar dúvidas e interagir com outros Blinguers.</div>
+                </a>
+                <a class="contact-card" href="#">
+                    <div class="contact-card-icon"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="contact-card-title">Instagram</div>
+                    <div class="contact-card-desc">@clubingue — Atualizações operacionais, bastidores e avisos.</div>
+                </a>
+            </div>
+        </section>
+
+        <!-- FORMULÁRIO -->
+        <section class="form-section">
+            <h2 class="form-section-title pixel"><i class="fa-solid fa-paper-plane"></i> MANDA UMA MENSAGEM</h2>
+
+            <form id="support-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label"><i class="fa-solid fa-user"></i> NOME</label>
+                        <input class="form-input" type="text" id="form-nome" required placeholder="Seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label"><i class="fa-solid fa-envelope"></i> EMAIL</label>
+                        <input class="form-input" type="email" id="form-email" required placeholder="seu@email.com">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label"><i class="fa-solid fa-tag"></i> MOTIVO</label>
+                    <select class="form-select" id="form-motivo" required>
+                        <option value="">Selecione um assunto...</option>
+                        <option value="duvida">Dúvida sobre os conteúdos</option>
+                        <option value="bug">Reportar um problema / Bug</option>
+                        <option value="sugestao">Sugestão de matéria</option>
+                        <option value="outro">Outros assuntos</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label"><i class="fa-solid fa-comment"></i> MENSAGEM</label>
+                    <textarea class="form-textarea" id="form-mensagem" required placeholder="Escreva os detalhes aqui..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit" id="btn-submit-form">
+                    <i class="fa-solid fa-paper-plane"></i> ENVIAR FORMULÁRIO
+                </button>
+            </form>
+
+            <!-- Container unificado onde a animação estilo RPG vai nascer -->
+            <div id="rpg-dialogue-container"></div>
+        </section>
+
+    </main>
+
+        <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="assets/images/logos/clubingue.png" alt="Clubingue">
+                <p>Conhecimento gratuito, organizado e sem enrolação. Do átomo ao verbo, do ENEM ao vestibular.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Plataforma</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Início</a></li>
+                    <li><a href="index.html#materias"><i class="fa-solid fa-bookmark"></i> Matérias</a></li>
+                    <li><a href="exercicios.html"><i class="fa-solid fa-pencil"></i> Exercícios</a></li>
+                    <li><a href="sobre.html"><i class="fa-solid fa-circle-info"></i> Sobre</a></li>
+                    <li><a href="suporte.html"><i class="fa-solid fa-headset"></i> Suporte</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Matérias</h4>
+                <ul>
+                    <li><a href="pages/historia/index.html"><i class="fa-solid fa-landmark"></i> História</a></li>
+                    <li><a href="pages/literatura/index.html"><i class="fa-solid fa-feather-pointed"></i> Literatura</a></li>
+                    <li><a href="pages/portugues/index.html"><i class="fa-solid fa-book-open"></i> Português</a></li>
+                    <li><a href="pages/fisica/index.html"><i class="fa-solid fa-bolt"></i> Física</a></li>
+                    <li><a href="pages/quimica/index.html"><i class="fa-solid fa-atom"></i> Química</a></li>
+                    <li><a href="pages/sociologia/index.html"><i class="fa-solid fa-people-group"></i> Sociologia</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span class="footer-bottom-copy">CLUBINGUE © 2026 — FEITO COM <i class="fa-solid fa-heart"></i> E MUITO CAFÉ</span>
+            <div class="footer-badges">
+                <span class="footer-badge">100% GRÁTIS</span>
+                <span class="footer-badge">SEM ADS</span>
+                <span class="footer-badge">OPEN SOURCE</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/support.js"></script>
+</body>
+</html>

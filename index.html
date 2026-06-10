@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clubingue</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="mobile-nav-header">
+            <a class="logo" href="index.html"><img src="assets/images/logos/clubingue.png" alt="Clubingue"></a>
+        </div>
+                <nav>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Início</a></li>
+                <li><a href="index.html#materias"><i class="fa-solid fa-bookmark"></i> Matérias</a></li>
+                <li><a href="exercicios.html"><i class="fa-solid fa-pencil"></i> Exercícios</a></li>
+                <li><a href="sobre.html"><i class="fa-solid fa-circle-info"></i> Sobre</a></li>
+                <li><a href="suporte.html"><i class="fa-solid fa-headset"></i> Suporte</a></li>
+                <li><a href="login.html" class="nav-login-btn" id="nav-auth-btn"><i class="fa-solid fa-right-to-bracket"></i> Entrar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="xp-widget" class="xp-widget-section">
+            <div id="xp-bar-wrap" class="xp-widget-card">
+                <div class="xp-avatar-container">
+                    <img src="assets/images/pfp/defaultpfp1.png" id="xp-avatar-img" alt="Avatar" onerror="this.style.display='none'; document.getElementById('xp-avatar-fallback').style.display='inline'">
+                    <span id="xp-avatar-fallback" style="display:none;">🦆</span>
+                </div>
+                <div class="xp-widget-info">
+                    <div class="xp-widget-header-text">
+                        <span id="xp-name">Blinguer</span> · <span id="xp-level-label">Nível 1</span> · <span id="xp-val">0 XP</span>
+                    </div>
+                    <div class="xp-progress-bg">
+                        <div id="xp-bar" class="xp-progress-fill"></div>
+                    </div>
+                </div>
+                <a href="#" id="xp-logout" class="xp-logout-btn">Sair</a>
+            </div>
+        </div>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Seu aprendizado a 3 inputs de você <i class="fa-solid fa-gamepad"></i></h1>
+                <p>Uma coletânea de recursos pra te ajudar a <strong>estudar</strong> sem perder a sanidade. Material completo e estruturado.</p>
+                <a href="#materias" class="btn-primary"><i class="fa-solid fa-play"></i> COMEÇAR AGORA</a>
+            </div>
+            <div class="hero-mascot">
+                <div class="mascot-box" data-label="O Pato Sávio">
+                    <img src="assets/images/logos/patomenino.png" alt="Pato Sávio Mascote" class="mascot-img-render" onerror="this.style.display='none'; document.getElementById('mascot-fallback').style.display='inline'">
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="highlight-box">
+                <div class="highlight-text-content">
+                    <h2><i class="fa-solid fa-pause"></i> "Pausa pra relaxar"</h2>
+                    <p>
+                        Sem essa <span class="wavy">chatice toda</span> de estudar direto por horas.
+                        O <strong style="color: var(--yellow);">BlingoBoy 3000</strong> é o portátil perfeito pra te entreter
+                        sem dar branco no conteúdo.
+                    </p>
+                </div>
+                <div class="highlight-img">
+                    <img class="blingo-base" src="assets/images/game/blingo.png" alt="BlingoBoy 3000 Console" onerror="this.style.display='none'">
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="free-banner">
+                <h2>E sabe o melhor? <span class="shaky">É CONHECIMENTO GRATUITOOO!!!</span></h2>
+                <ul class="features-list">
+                    <li><i class="fa-solid fa-book-open"></i> Conteúdo Completo</li>
+                    <li><i class="fa-solid fa-pencil"></i> Exercícios Interativos</li>
+                    <li><i class="fa-solid fa-video"></i> Vídeos Educativos</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" id="materias">
+            <h2 class="section-title pixel"><i class="fa-solid fa-book"></i> MATÉRIAS</h2>
+            
+            <div class="search-bar-wrap">
+                <input class="search-bar" type="text" id="search-global" placeholder="Buscar matéria ou tópico..." autocomplete="off">
+                <i class="fa-solid fa-magnifying-glass search-bar-icon"></i>
+                <div id="search-results" class="search-results-drop" style="display:none"></div>
+            </div>
+            
+            <div class="subjects-grid">
+                <a href="pages/historia/index.html" class="subject-card history">
+                    <span class="subject-icon">
+                        <i class="fa-solid fa-landmark"></i>
+                    </span>
+                    <span class="subject-name">HISTÓRIA</span>
+                    <span class="subject-count">1 tópico</span>
+                </a>
+                
+                <a href="pages/literatura/index.html" class="subject-card geo">
+                    <span class="subject-icon">
+                        <i class="fa-solid fa-feather-pointed"></i>
+                    </span>
+                    <span class="subject-name">LITERATURA</span>
+                    <span class="subject-count">1 tópico</span>
+                </a>
+                
+                <a href="pages/portugues/index.html" class="subject-card port">
+                    <span class="subject-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </span>
+                    <span class="subject-name">PORTUGUÊS</span>
+                    <span class="subject-count">1 tópico</span>
+                </a>
+                
+                <a href="#" class="subject-card math">
+                    <span class="subject-icon">
+                        <i class="fa-solid fa-square-root-variable"></i>
+                    </span>
+                    <span class="subject-name">MATEMÁTICA</span>
+                    <span class="subject-count">em breve</span>
+                </a>
+                
+                <a href="pages/fisica/index.html" class="subject-card science">
+                    <span class="subject-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </span>
+                    <span class="subject-name">FÍSICA</span>
+                    <span class="subject-count">1 tópico</span>
+                </a>
+                
+                <a href="pages/quimica/index.html" class="subject-card english">
+                    <span class="subject-icon">
+                        <i class="fa-solid fa-atom"></i>
+                    </span>
+                    <span class="subject-name">QUÍMICA</span>
+                    <span class="subject-count">1 tópico</span>
+                </a>
+                
+                <a href="#" class="subject-card english">
+                    <span class="subject-icon">
+                        <i class="fa-solid fa-language"></i>
+                    </span>
+                    <span class="subject-name">INGLÊS</span>
+                    <span class="subject-count">em breve</span>
+                </a>
+                
+                <a href="#" class="subject-card phil">
+                    <span class="subject-icon">
+                        <i class="fa-solid fa-brain"></i>
+                    </span>
+                    <span class="subject-name">FILOSOFIA</span>
+                    <span class="subject-count">em breve</span>
+                </a>
+                
+                <a href="pages/sociologia/index.html" class="subject-card socio">
+                    <span class="subject-icon">
+                        <i class="fa-solid fa-people-group"></i>
+                    </span>
+                    <span class="subject-name">SOCIOLOGIA</span>
+                    <span class="subject-count">1 tópico</span>
+                </a>
+
+                <a href="#" class="subject-card geo">
+                    <span class="subject-icon">
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </span>
+                    <span class="subject-name">GEOGRAFIA</span>
+                    <span class="subject-count">em breve</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+        <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="assets/images/logos/clubingue.png" alt="Clubingue">
+                <p>Conhecimento gratuito, organizado e sem enrolação. Do átomo ao verbo, do ENEM ao vestibular.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Plataforma</h4>
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Início</a></li>
+                    <li><a href="index.html#materias"><i class="fa-solid fa-bookmark"></i> Matérias</a></li>
+                    <li><a href="exercicios.html"><i class="fa-solid fa-pencil"></i> Exercícios</a></li>
+                    <li><a href="sobre.html"><i class="fa-solid fa-circle-info"></i> Sobre</a></li>
+                    <li><a href="suporte.html"><i class="fa-solid fa-headset"></i> Suporte</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span class="footer-bottom-copy">CLUBINGUE © 2026 — FEITO COM <i class="fa-solid fa-heart"></i> E MUITO CAFÉ</span>
+            <div class="footer-badges">
+                <span class="footer-badge">100% GRÁTIS</span>
+                <span class="footer-badge">SEM ADS</span>
+                <span class="footer-badge">OPEN SOURCE</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/loader.js"></script>
+
+
+    <!-- BlingoBoy Widget Info -->
+    <div id="blingo-info-overlay" style="display:none;">
+        <div id="blingo-info-widget">
+            <button class="blingo-info-close" id="blingo-info-close">✕</button>
+            <div class="blingo-info-left">
+                <div class="blingo-slideshow" id="blingo-slideshow">
+                    <img class="blingo-slide active" src="assets/images/game/blingo.png" alt="">
+                    <img class="blingo-slide" src="assets/images/logos/patomenino.png" alt="">
+                    <img class="blingo-slide" src="assets/images/logos/pato.png" alt="">
+                    <div class="blingo-slide-dots" id="blingo-dots"></div>
+                </div>
+            </div>
+            <div class="blingo-info-right">
+                <div class="blingo-info-text">
+                    <h3 class="blingo-info-title">BlingoBoy 3000</h3>
+                    <p class="blingo-info-desc">O companheiro de estudos que você não sabia que precisava. Jogos, pausas inteligentes e aquele empurrãozinho pra continuar estudando sem virar robô.</p>
+                    <ul class="blingo-info-features">
+                        <li><i class="fa-solid fa-gamepad"></i> Minigames de pausa</li>
+                        <li><i class="fa-solid fa-brain"></i> Quizzes rápidos</li>
+                        <li><i class="fa-solid fa-star"></i> Recompensas em XP</li>
+                    </ul>
+                </div>
+                <button class="blingo-play-btn" disabled>
+                    <i class="fa-solid fa-play"></i> Jogar
+                    <span class="blingo-wip-badge">WIP</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
